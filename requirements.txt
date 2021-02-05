@@ -1,0 +1,16 @@
+certifi==2020.6.20
+chardet==3.0.4
+Django==1.11.29
+et-xmlfile==1.0.1
+gunicorn==19.10.0
+idna==2.10
+jdcal==1.4.1
+numpy==1.16.6
+openpyxl==2.6.4
+pandas==0.24.2
+python-dateutil==2.8.1
+pytz==2020.1
+requests==2.24.0
+six==1.15.0
+urllib3==1.25.9
+xlrd==2.0.1
