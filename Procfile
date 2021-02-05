@@ -1,0 +1,1 @@
+web: gunicorn acta_home.wsgi
