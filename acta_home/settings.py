@@ -26,7 +26,7 @@ SECRET_KEY = '_h&_)f#e7^9++gs5feynrzu5=8e@)z9dx!(qd6h8o*_!dc9cx^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['evening-island-86490.herokuapp.com']
 
 
 # Application definition
