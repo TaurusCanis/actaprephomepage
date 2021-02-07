@@ -177,42 +177,52 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="p-5 bg-blue-800 text-light">
-                <div class="container col-10">
-                    <div class="p-5 text-center">
+            <section id="contact" class="bg-blue-800 text-light pb-5">
+                <div class="row">
+                    <div class="col p-5 text-center">
                         <h1>Contact</h1>
                     </div>
-                    <div class="border border-3 rounded">
-                        <div class="pt-5 text-center">
-                            <h2>Ready to get started?</h2>
-                            <h3>Fill out the form below and tell us about your child.</h3>
-                        </div>
-                        <div class="p-5 m-4">
-                            <div>
-                                <div id="form-border">
-                                    <form action="{% url 'submit_message' %}" method="POST" id="survey-form" role="form">
-                                        {% csrf_token %}
-                                        <div class="form-div mb-3">
-                                          <input type="text" class="form-control" id="name" name="user_name" required placeholder="Parent's Name">
-                                        </div>
-                                        <div class="form-div mb-3">
-                                          <input class="form-control" type="email" id="email" name="user_email" required placeholder="Parent's Email">
-                                        </div>
-                                        <div class="form-div mb-3">
-                                            <input class="form-control" type="phone" id="phone" name="user_phone" required placeholder="Parent's Phone">
-                                        </div>
-                                        <div class="form-div mb-3">
-                                          <input class="form-control" type="text" id="student-name" name="student_name" required placeholder="Student's Name">
-                                        </div>
-                                        <div class="form-div mb-3">
-                                            <input class="form-control" type="text" id="student-grade" name="student_grade" required placeholder="Student's Current Grade">
-                                        </div>
-                                        <textarea class="form-control" placeholder="Please tell us about your child's needs:" rows="5" name="message"></textarea>
-                                        <div class="col-12 text-center mt-3">
-                                          <button type="submit" class="btn btn-yellow-500">Submit</button>
-                                        </div>
-                                    </form>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col col-10 border border-3 rounded pt-5 pb-5 mb-5">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <h2>Ready to get started?</h2>
+                                    </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <h3>Fill out the form below and tell us about your child.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <form action="{% url 'submit_message' %}" method="POST" id="survey-form" role="form">
+                                    {% csrf_token %}
+                                    <div class="form-div mb-3">
+                                      <input type="text" class="form-control" id="name" name="user_name" required placeholder="Parent's Name">
+                                    </div>
+                                    <div class="form-div mb-3">
+                                      <input class="form-control" type="email" id="email" name="user_email" required placeholder="Parent's Email">
+                                    </div>
+                                    <div class="form-div mb-3">
+                                        <input class="form-control" type="phone" id="phone" name="user_phone" required placeholder="Parent's Phone">
+                                    </div>
+                                    <div class="form-div mb-3">
+                                      <input class="form-control" type="text" id="student-name" name="student_name" required placeholder="Student's Name">
+                                    </div>
+                                    <div class="form-div mb-3">
+                                        <input class="form-control" type="text" id="student-grade" name="student_grade" required placeholder="Student's Current Grade">
+                                    </div>
+                                    <textarea class="form-control" placeholder="Please tell us about your child's needs:" rows="5" name="message"></textarea>
+                                    <div class="col-12 text-center mt-3">
+                                      <button type="submit" class="btn btn-yellow-500">Submit</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -228,7 +238,6 @@
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
                   </ul>
                 </div>
               </div>
