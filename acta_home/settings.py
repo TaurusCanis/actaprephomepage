@@ -28,7 +28,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'evening-island-86490.herokuapp.com', 'www.actaprepct.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'evening-island-86490.herokuapp.com', 'www.actaprepct.com', 'actaprepct.com']
 
 
 # Application definition
