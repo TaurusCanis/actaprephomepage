@@ -7,6 +7,7 @@ from django.template.loader import render_to_string
 # Create your views here.
 
 def index(request):
+    print("LOADED")
     return render(request, "acta_homepage/index.html")
     
 def submit_message(request):
