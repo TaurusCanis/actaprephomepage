@@ -8,7 +8,7 @@ from django.template.loader import render_to_string
 
 def index(request):
     print("LOADED")
-    return render(request, "acta_homepage/indexXXX.html")
+    return render(request, "acta_homepage/index.html")
     
 def submit_message(request):
     print("request.POST: ", request.POST)
