@@ -25,11 +25,13 @@ def submit_message(request):
         "message": request.POST.get('message')
     }
     print("CONTEXT: ", context)
+    email_string = render_to_string('acta_homepage/emails/inquiry_email.txt', context)
+    print("email_string: ", email_string, " type: ", type(email_string))
     
     try:
         send_mail(
             'Acta Prep - Request from %s' %parent_name,
-            render_to_string('acta_homepage/emails/inquiry_email.txt', context),
+            email_string,
             parent_email,
             ['actaprepct@gmail.com'],
             fail_silently=False,
