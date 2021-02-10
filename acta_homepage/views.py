@@ -26,7 +26,7 @@ def submit_message(request):
         )
         messages.add_message(request, messages.SUCCESS, 'Thank you. Your message has successfully been submitted.')
         return redirect("index")
-    except Exception, e:
+    except Exception as e:
         print("EXCEPTION: ", e)
         messages.add_message(request, messages.ERROR, 'There was an error sending your message. Please try again.')
         
