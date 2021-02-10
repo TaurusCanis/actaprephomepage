@@ -1,0 +1,6 @@
+Parent Name: {{ parent_name }}
+Parent Email: {{ parent_email }}
+Parent Phone: {{ parent_phone }}
+Student Name: {{ student_name }}
+Student grade: {{ student_grade }}
+Message: {{ message }}
