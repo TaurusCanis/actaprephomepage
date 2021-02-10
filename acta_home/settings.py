@@ -26,7 +26,7 @@ SECURE_SSL_REDIRECT = True
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'evening-island-86490.herokuapp.com', 'www.actaprepct.com', 'actaprepct.com']
 
@@ -135,3 +135,4 @@ EMAIL_USE_TLS = True
 if not DEBUG:
     EMAIL_HOST_USER = os.environ['EMAIL_USERNAME']
     EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASSWORD']
+

@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.template.loader import render_to_string
 
 # Create your views here.
 
@@ -9,19 +10,21 @@ def index(request):
     return render(request, "acta_homepage/index.html")
     
 def submit_message(request):
+    print("request.POST: ", request.POST)
     parent_name = request.POST.get('parent_name')
     parent_email = request.POST.get('parent_email')
     parent_phone = request.POST.get('parent_phone')
     student_name = request.POST.get('student_name')
     student_grade = request.POST.get('student_grade')
     context = {
-        "parent name": parent_name,
-        "parent email": parent_email,
-        "parent phone": parent_phone,
-        "student name": student_name,
-        "student grade": student_grade,
+        "parent_name": parent_name,
+        "parent_email": parent_email,
+        "parent_phone": parent_phone,
+        "student_name": student_name,
+        "student_grade": student_grade,
         "message": request.POST.get('message')
     }
+    print("CONTEXT: ", context)
     
     try:
         send_mail(

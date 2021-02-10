@@ -205,19 +205,19 @@
                                 <form action="{% url 'submit_message' %}" method="POST" id="survey-form" role="form">
                                     {% csrf_token %}
                                     <div class="form-div mb-3">
-                                      <input type="text" class="form-control" id="name" name="user_name" required placeholder="Parent's Name">
+                                      <input type="text" class="form-control" id="parent_name" name="parent_name" required placeholder="Parent's Name">
                                     </div>
                                     <div class="form-div mb-3">
-                                      <input class="form-control" type="email" id="email" name="user_email" required placeholder="Parent's Email">
+                                      <input class="form-control" type="email" id="parent_email" name="parent_email" required placeholder="Parent's Email">
                                     </div>
                                     <div class="form-div mb-3">
-                                        <input class="form-control" type="phone" id="phone" name="user_phone" required placeholder="Parent's Phone">
+                                        <input class="form-control" type="phone" id="parent_phone" name="parent_phone" required placeholder="Parent's Phone">
                                     </div>
                                     <div class="form-div mb-3">
                                       <input class="form-control" type="text" id="student-name" name="student_name" required placeholder="Student's Name">
                                     </div>
                                     <div class="form-div mb-3">
-                                        <input class="form-control" type="text" id="student-grade" name="student_grade" required placeholder="Student's Current Grade">
+                                        <input class="form-control" type="text" id="student_grade" name="student_grade" required placeholder="Student's Current Grade">
                                     </div>
                                     <textarea class="form-control" placeholder="Please tell us about your child's needs:" rows="5" name="message"></textarea>
                                     <div class="col-12 text-center mt-3">
