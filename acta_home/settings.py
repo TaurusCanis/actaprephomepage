@@ -135,4 +135,5 @@ EMAIL_USE_TLS = True
 if not DEBUG:
     EMAIL_HOST_USER = os.environ['EMAIL_USERNAME']
     EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASSWORD']
+    
 
